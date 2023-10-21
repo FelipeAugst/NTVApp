@@ -1,0 +1,97 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net7.0-windows\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net7.0-windows\NTVApp.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net7.0-windows\NTVApp.GlobalUsings.g.cs" />
+    <Compile Include="obj\Release\net7.0-windows\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Release\net7.0-windows\NTVApp.AssemblyInfo.cs" />
+    <Compile Include="obj\Release\net7.0-windows\NTVApp.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net7.0-windows\NTVApp.deps.json" />
+    <Content Include="bin\Debug\net7.0-windows\NTVApp.runtimeconfig.json" />
+    <Content Include="bin\Release\net7.0-windows\NTVApp.deps.json" />
+    <Content Include="bin\Release\net7.0-windows\NTVApp.runtimeconfig.json" />
+    <Content Include="obj\Debug\net7.0-windows\NTVApp.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net7.0-windows\NTVApp.designer.deps.json" />
+    <Content Include="obj\Debug\net7.0-windows\NTVApp.designer.runtimeconfig.json" />
+    <Content Include="obj\NTVApp.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\Release\net7.0-windows\NTVApp.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\net7.0-windows\NTVApp.designer.deps.json" />
+    <Content Include="obj\Release\net7.0-windows\NTVApp.designer.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="asset\" />
+    <Folder Include="database\" />
+    <Folder Include="models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net7.0-windows\NTVApp.dll" />
+    <None Include="bin\Debug\net7.0-windows\NTVApp.exe" />
+    <None Include="bin\Debug\net7.0-windows\NTVApp.pdb" />
+    <None Include="bin\Release\net7.0-windows\NTVApp.dll" />
+    <None Include="bin\Release\net7.0-windows\NTVApp.exe" />
+    <None Include="bin\Release\net7.0-windows\NTVApp.pdb" />
+    <None Include="NTVApp.sln" />
+    <None Include="obj\Debug\net7.0-windows\apphost.exe" />
+    <None Include="obj\Debug\net7.0-windows\NTVApp.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net7.0-windows\NTVApp.assets.cache" />
+    <None Include="obj\Debug\net7.0-windows\NTVApp.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net7.0-windows\NTVApp.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\net7.0-windows\NTVApp.dll" />
+    <None Include="obj\Debug\net7.0-windows\NTVApp.Forms.Menu.resources" />
+    <None Include="obj\Debug\net7.0-windows\NTVApp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net7.0-windows\NTVApp.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net7.0-windows\NTVApp.pdb" />
+    <None Include="obj\Debug\net7.0-windows\NTVApp.Properties.Resources.resources" />
+    <None Include="obj\Debug\net7.0-windows\refint\NTVApp.dll" />
+    <None Include="obj\Debug\net7.0-windows\ref\NTVApp.dll" />
+    <None Include="obj\NTVApp.csproj.nuget.g.props" />
+    <None Include="obj\NTVApp.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\Release\net7.0-windows\apphost.exe" />
+    <None Include="obj\Release\net7.0-windows\NTVApp.AssemblyInfoInputs.cache" />
+    <None Include="obj\Release\net7.0-windows\NTVApp.assets.cache" />
+    <None Include="obj\Release\net7.0-windows\NTVApp.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Release\net7.0-windows\NTVApp.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\net7.0-windows\NTVApp.csproj.GenerateResource.cache" />
+    <None Include="obj\Release\net7.0-windows\NTVApp.dll" />
+    <None Include="obj\Release\net7.0-windows\NTVApp.Forms.Menu.resources" />
+    <None Include="obj\Release\net7.0-windows\NTVApp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Release\net7.0-windows\NTVApp.genruntimeconfig.cache" />
+    <None Include="obj\Release\net7.0-windows\NTVApp.pdb" />
+    <None Include="obj\Release\net7.0-windows\NTVApp.Properties.Resources.resources" />
+    <None Include="obj\Release\net7.0-windows\refint\NTVApp.dll" />
+    <None Include="obj\Release\net7.0-windows\ref\NTVApp.dll" />
+    <None Include="obj\Release\net7.0-windows\TempPE\Properties.Resources.Designer.cs.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
