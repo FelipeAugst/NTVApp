@@ -9,12 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="obj\Debug\net7.0-windows\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
-    <Compile Include="obj\Debug\net7.0-windows\NTVApp.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\net7.0-windows\NTVApp.GlobalUsings.g.cs" />
-    <Compile Include="obj\Release\net7.0-windows\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
-    <Compile Include="obj\Release\net7.0-windows\NTVApp.AssemblyInfo.cs" />
-    <Compile Include="obj\Release\net7.0-windows\NTVApp.GlobalUsings.g.cs" />
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="obj\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,14 +19,6 @@
     <Content Include="bin\Debug\net7.0-windows\NTVApp.runtimeconfig.json" />
     <Content Include="bin\Release\net7.0-windows\NTVApp.deps.json" />
     <Content Include="bin\Release\net7.0-windows\NTVApp.runtimeconfig.json" />
-    <Content Include="obj\Debug\net7.0-windows\NTVApp.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\net7.0-windows\NTVApp.designer.deps.json" />
-    <Content Include="obj\Debug\net7.0-windows\NTVApp.designer.runtimeconfig.json" />
-    <Content Include="obj\NTVApp.csproj.nuget.dgspec.json" />
-    <Content Include="obj\project.assets.json" />
-    <Content Include="obj\Release\net7.0-windows\NTVApp.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Release\net7.0-windows\NTVApp.designer.deps.json" />
-    <Content Include="obj\Release\net7.0-windows\NTVApp.designer.runtimeconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,37 +35,6 @@
     <None Include="bin\Release\net7.0-windows\NTVApp.exe" />
     <None Include="bin\Release\net7.0-windows\NTVApp.pdb" />
     <None Include="NTVApp.sln" />
-    <None Include="obj\Debug\net7.0-windows\apphost.exe" />
-    <None Include="obj\Debug\net7.0-windows\NTVApp.AssemblyInfoInputs.cache" />
-    <None Include="obj\Debug\net7.0-windows\NTVApp.assets.cache" />
-    <None Include="obj\Debug\net7.0-windows\NTVApp.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\net7.0-windows\NTVApp.csproj.GenerateResource.cache" />
-    <None Include="obj\Debug\net7.0-windows\NTVApp.dll" />
-    <None Include="obj\Debug\net7.0-windows\NTVApp.Forms.Menu.resources" />
-    <None Include="obj\Debug\net7.0-windows\NTVApp.GeneratedMSBuildEditorConfig.editorconfig" />
-    <None Include="obj\Debug\net7.0-windows\NTVApp.genruntimeconfig.cache" />
-    <None Include="obj\Debug\net7.0-windows\NTVApp.pdb" />
-    <None Include="obj\Debug\net7.0-windows\NTVApp.Properties.Resources.resources" />
-    <None Include="obj\Debug\net7.0-windows\refint\NTVApp.dll" />
-    <None Include="obj\Debug\net7.0-windows\ref\NTVApp.dll" />
-    <None Include="obj\NTVApp.csproj.nuget.g.props" />
-    <None Include="obj\NTVApp.csproj.nuget.g.targets" />
-    <None Include="obj\project.nuget.cache" />
-    <None Include="obj\Release\net7.0-windows\apphost.exe" />
-    <None Include="obj\Release\net7.0-windows\NTVApp.AssemblyInfoInputs.cache" />
-    <None Include="obj\Release\net7.0-windows\NTVApp.assets.cache" />
-    <None Include="obj\Release\net7.0-windows\NTVApp.csproj.BuildWithSkipAnalyzers" />
-    <None Include="obj\Release\net7.0-windows\NTVApp.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Release\net7.0-windows\NTVApp.csproj.GenerateResource.cache" />
-    <None Include="obj\Release\net7.0-windows\NTVApp.dll" />
-    <None Include="obj\Release\net7.0-windows\NTVApp.Forms.Menu.resources" />
-    <None Include="obj\Release\net7.0-windows\NTVApp.GeneratedMSBuildEditorConfig.editorconfig" />
-    <None Include="obj\Release\net7.0-windows\NTVApp.genruntimeconfig.cache" />
-    <None Include="obj\Release\net7.0-windows\NTVApp.pdb" />
-    <None Include="obj\Release\net7.0-windows\NTVApp.Properties.Resources.resources" />
-    <None Include="obj\Release\net7.0-windows\refint\NTVApp.dll" />
-    <None Include="obj\Release\net7.0-windows\ref\NTVApp.dll" />
-    <None Include="obj\Release\net7.0-windows\TempPE\Properties.Resources.Designer.cs.dll" />
   </ItemGroup>
 
   <ItemGroup>
