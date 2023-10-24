@@ -28,120 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            menuStrip1 = new MenuStrip();
-            clientesToolStripMenuItem = new ToolStripMenuItem();
-            planosToolStripMenuItem = new ToolStripMenuItem();
-            novoToolStripMenuItem = new ToolStripMenuItem();
-            listarToolStripMenuItem = new ToolStripMenuItem();
-            editarToolStripMenuItem = new ToolStripMenuItem();
-            listarToolStripMenuItem1 = new ToolStripMenuItem();
-            buscarToolStripMenuItem = new ToolStripMenuItem();
-            deletarToolStripMenuItem = new ToolStripMenuItem();
-            incluirToolStripMenuItem = new ToolStripMenuItem();
-            excluirToolStripMenuItem = new ToolStripMenuItem();
-            configuraçõesToolStripMenuItem = new ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            menuStrip1 = new System.Windows.Forms.MenuStrip();
+            clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            listarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            deletarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            planosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            incluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(305, 52);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { clientesToolStripMenuItem, planosToolStripMenuItem, configuraçõesToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { clientesToolStripMenuItem, planosToolStripMenuItem, configuraçõesToolStripMenuItem });
+            menuStrip1.Location = new System.Drawing.Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new System.Drawing.Size(800, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
             // clientesToolStripMenuItem
             // 
-            clientesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { novoToolStripMenuItem, editarToolStripMenuItem, listarToolStripMenuItem1, buscarToolStripMenuItem, deletarToolStripMenuItem });
+            clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { novoToolStripMenuItem, editarToolStripMenuItem, listarToolStripMenuItem1, buscarToolStripMenuItem, deletarToolStripMenuItem });
             clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            clientesToolStripMenuItem.Size = new Size(61, 20);
+            clientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             clientesToolStripMenuItem.Text = "Clientes";
-            // 
-            // planosToolStripMenuItem
-            // 
-            planosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { incluirToolStripMenuItem, excluirToolStripMenuItem });
-            planosToolStripMenuItem.Name = "planosToolStripMenuItem";
-            planosToolStripMenuItem.Size = new Size(54, 20);
-            planosToolStripMenuItem.Text = "Planos";
             // 
             // novoToolStripMenuItem
             // 
-            novoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { listarToolStripMenuItem });
             novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            novoToolStripMenuItem.Size = new Size(180, 22);
+            novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             novoToolStripMenuItem.Text = "Novo";
-            // 
-            // listarToolStripMenuItem
-            // 
-            listarToolStripMenuItem.Name = "listarToolStripMenuItem";
-            listarToolStripMenuItem.Size = new Size(180, 22);
-            listarToolStripMenuItem.Text = "Listar";
+            novoToolStripMenuItem.Click += this.novoToolStripMenuItem_Click;
             // 
             // editarToolStripMenuItem
             // 
             editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            editarToolStripMenuItem.Size = new Size(180, 22);
+            editarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             editarToolStripMenuItem.Text = "Editar";
             // 
             // listarToolStripMenuItem1
             // 
             listarToolStripMenuItem1.Name = "listarToolStripMenuItem1";
-            listarToolStripMenuItem1.Size = new Size(180, 22);
+            listarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             listarToolStripMenuItem1.Text = "Listar";
             // 
             // buscarToolStripMenuItem
             // 
             buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
-            buscarToolStripMenuItem.Size = new Size(180, 22);
+            buscarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             buscarToolStripMenuItem.Text = "Buscar";
             // 
             // deletarToolStripMenuItem
             // 
             deletarToolStripMenuItem.Name = "deletarToolStripMenuItem";
-            deletarToolStripMenuItem.Size = new Size(180, 22);
+            deletarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             deletarToolStripMenuItem.Text = "Deletar";
+            // 
+            // planosToolStripMenuItem
+            // 
+            planosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { incluirToolStripMenuItem, excluirToolStripMenuItem });
+            planosToolStripMenuItem.Name = "planosToolStripMenuItem";
+            planosToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            planosToolStripMenuItem.Text = "Planos";
             // 
             // incluirToolStripMenuItem
             // 
             incluirToolStripMenuItem.Name = "incluirToolStripMenuItem";
-            incluirToolStripMenuItem.Size = new Size(180, 22);
+            incluirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             incluirToolStripMenuItem.Text = "Incluir";
             // 
             // excluirToolStripMenuItem
             // 
             excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
-            excluirToolStripMenuItem.Size = new Size(180, 22);
+            excluirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             excluirToolStripMenuItem.Text = "Excluir";
             // 
             // configuraçõesToolStripMenuItem
             // 
             configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
-            configuraçõesToolStripMenuItem.Size = new Size(96, 20);
+            configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
             configuraçõesToolStripMenuItem.Text = "Configurações";
             // 
             // Menu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox1);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(800, 450);
             Controls.Add(menuStrip1);
+            IsMdiContainer = true;
             Name = "Menu";
             Text = "Menu";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

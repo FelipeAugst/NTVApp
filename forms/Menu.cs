@@ -21,5 +21,10 @@ namespace NTVApp.Forms
         {
 
         }
+
+        private void novoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
