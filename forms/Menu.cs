@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NTVApp.database.bank;
 
 namespace NTVApp.Forms
 {
@@ -24,6 +25,13 @@ namespace NTVApp.Forms
 
         private void novoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void configuraçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bank DB = new Bank();
+            DB.Connect();
 
         }
     }

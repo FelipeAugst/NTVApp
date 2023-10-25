@@ -23,7 +23,6 @@
 
   <ItemGroup>
     <Folder Include="asset\" />
-    <Folder Include="database\" />
     <Folder Include="models\" />
   </ItemGroup>
 
@@ -35,6 +34,10 @@
     <None Include="bin\Release\net7.0-windows\NTVApp.exe" />
     <None Include="bin\Release\net7.0-windows\NTVApp.pdb" />
     <None Include="NTVApp.sln" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.1.0" />
   </ItemGroup>
 
   <ItemGroup>
