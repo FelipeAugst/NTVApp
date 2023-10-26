@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="database\Class1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="bin\Debug\net7.0-windows\NTVApp.deps.json" />
     <Content Include="bin\Debug\net7.0-windows\NTVApp.runtimeconfig.json" />
     <Content Include="bin\Release\net7.0-windows\NTVApp.deps.json" />
@@ -23,7 +27,6 @@
 
   <ItemGroup>
     <Folder Include="asset\" />
-    <Folder Include="models\" />
   </ItemGroup>
 
   <ItemGroup>
