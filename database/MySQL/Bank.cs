@@ -41,7 +41,7 @@ namespace NTVApp.database.MySQL
             return;
 
         }
-        public void Desconnect()
+        public void Disconnect()
         {
             con.Dispose();
         }
