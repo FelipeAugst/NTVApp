@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using NTVApp.database.bank;
+using NTVApp.database.MySQL;
 
 namespace NTVApp.Forms
 {

@@ -26,10 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="asset\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="bin\Debug\net7.0-windows\NTVApp.dll" />
     <None Include="bin\Debug\net7.0-windows\NTVApp.exe" />
     <None Include="bin\Debug\net7.0-windows\NTVApp.pdb" />
