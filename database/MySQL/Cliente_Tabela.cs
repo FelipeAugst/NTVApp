@@ -22,7 +22,7 @@ namespace NTVApp.database.MySQL
         {
             db.Connect();
             MySqlCommand cmd = db.con.CreateCommand();
-            string query = "insert into Cliente(Nome,TipoCliente,CpfCnpj,TipoPessoa,Sexo,DtNasc,Email,Endereco,Telefone,DtCadastro,plano_IDPlano) ";
+            string query = "insert into Cliente(Nome,TipoCliente,CpfCnpj,TipoPessoa,Sexo,DtNasc,Email,Endereco,Telefone,DtCadastro,plano_IDPlano)";
             query += "values(?Nome,?TipoCliente,?CpfCnpj,?TipoPessoa,?Sexo,?DtNasc,? Email,?Endereco,?Telefone,?DtCadastro,?plano_IDPlano";
 
             cmd.CommandText = query;
@@ -56,13 +56,54 @@ namespace NTVApp.database.MySQL
 
         }
 
+        public MySqlDataReader? Listar()
+        {
+            db.Connect();
+            MySqlCommand cmd = db.con.CreateCommand();
+            string query = "select * from cliente";
+            cmd.CommandText = query;
+           var resultado = cmd.ExecuteReader();
+            if (resultado == null)
+            {
+                db.Disconnect();
+                return null;
+            }
+            db.Disconnect();
+            return resultado;
+            
+        }
 
-
-
+        public void Buscar(string termo)
+        {
+            db.Connect();
+            var cmd = db.con.CreateCommand();
+            string query = "select from cliente where nome= ?nome or email= ?email";
+            cmd.CommandText = query;
+            cmd.Parameters.AddWithValue("?nome", termo);
+            cmd.Parameters.AddWithValue("?email", termo);
+            var resultado = cmd.ExecuteReader();
+            if (resultado == null)
+            {
+                db.Disconnect();
+                return;    
+            }
+            while (resultado.Read())
+            {
+                Console.WriteLine(resultado.ToString());
+            }
+            resultado.Close();
+            db.Disconnect();
+            
+        }
 
 
 
 
         }
+
+    //public void Alterar()
+
+
+
     }
-}
+
